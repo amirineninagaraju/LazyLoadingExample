@@ -12,11 +12,6 @@ const routes: Routes = [
     path: '',
     component: InternationalPatientsComponent,
     children: [
-      { path: '', redirectTo: 'InternationalPatients', pathMatch: 'full' },
-      {
-        path: 'InternationalPatients',
-        component: InternationalPatientsComponent,
-      },
       { path: 'KeySpecialties', component: KeySpecialtiesComponent },
       { path: 'Locations', component: LocationsComponent },
       { path: 'PatientTestimonials', component: PatientTestimonialsComponent },
