@@ -12,8 +12,6 @@ const routes: Routes = [
     path: '',
     component: DepartmentsComponent,
     children: [
-      { path: '', redirectTo: 'Departments', pathMatch: 'full' },
-      { path: 'Departments', component: DepartmentsComponent },
       { path: 'accident', component: AccidentComponent },
       { path: 'Arthroscopy', component: ArthroscopyComponent },
       { path: 'BariatricSurgery', component: BariatricSurgeryComponent },

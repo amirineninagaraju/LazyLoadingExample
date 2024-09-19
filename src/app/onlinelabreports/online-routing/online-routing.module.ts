@@ -11,17 +11,12 @@ const routes: Routes = [
     path: '',
     component: OnlinelabreportsComponent,
     children: [
-      { path: '', redirectTo: 'OnlineLabReports', pathMatch: 'full' },
-      {
-        path: 'OnlineLabReports',
-        component: OnlinelabreportsComponent,
-      },
       { path: 'Anantapur', component: AnantapurComponent },
       { path: 'Kurnool', component: KurnoolComponent },
       { path: 'nellore', component: NelloreComponent },
       { path: 'Secundrabad', component: SecundrabadComponent },
       {
-        path: ' Rajamendry',
+        path: 'Rajamendry',
         component: RajamendryComponent,
       },
     ],

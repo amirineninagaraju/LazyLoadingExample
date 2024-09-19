@@ -12,8 +12,6 @@ const routes: Routes = [
     path: '',
     component: InstitueComponent,
     children: [
-      { path: '', redirectTo: 'Institue', pathMatch: 'full' },
-      { path: 'Institue', component: InstitueComponent },
       {
         path: 'InstituteOfCardiacSciences',
         component: InstituteOfCardiacSciencesComponent,

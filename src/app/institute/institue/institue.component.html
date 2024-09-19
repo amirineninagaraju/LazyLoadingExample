@@ -1,2 +1,76 @@
-<p>institue Component works here</p>
-<a routerLink="">Back to HomePage</a>&nbsp;
+<h1>Institute Module</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      img {
+        width: 350px;
+        height: 400px;
+      }
+
+      button {
+        padding: 15px 60px;
+        border: none;
+        border-radius: 3px;
+        font-weight: bolder;
+        color: white;
+      }
+
+      #addToCart {
+        background-color: orange;
+      }
+
+      #buyNow {
+        background-color: orangered;
+      }
+    </style>
+    <script>
+      function addToCart() {
+        alert("Your Item is added to cart!!");
+      }
+    </script>
+  </head>
+
+  <body>
+    <img
+      src="https://rukminim2.flixcart.com/image/832/832/xif0q/suitcase/7/j/p/-original-imagkuxzvzbhusvy.jpeg?q=70&crop=false"
+      alt=""
+    />
+    <br />
+    <a class="btn btn-success" routerLink="/Institue/InstituteOfCardiacSciences"
+      >InstituteOfCardiacSciences</a
+    >&nbsp;
+    <a class="btn btn-success" routerLink="/Institue/InstituteOfDentalScience"
+      >InstituteOfDentalScience</a
+    >&nbsp;
+    <a
+      class="btn btn-success"
+      routerLink="/Institue/InstituteOfGastroenterologyHepatology"
+      >InstituteOfGastroenterologyHepatology</a
+    >&nbsp;
+    <a
+      class="btn btn-success"
+      routerLink="/Institue/InstituteOfHeartLungTransplantation"
+      >InstituteOfHeartLungTransplantation</a
+    >&nbsp;
+    <a class="btn btn-success" routerLink="/Institue/InstituteOfNeuroSciences"
+      >InstituteOfNeuroSciences</a
+    >&nbsp;
+
+    <a class="btn btn-success" routerLink="">Back to HomePage</a>&nbsp;
+    <!-- //Child module routes render here.
+//router outlet is a container.all childmodule pages rendered here -->
+    <div style="background-color: chartreuse">
+      <h4>child routes information display here.</h4>
+      <router-outlet></router-outlet>
+    </div>
+  </body>
+</html>
